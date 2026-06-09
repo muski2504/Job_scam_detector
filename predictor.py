@@ -8,7 +8,7 @@ os.environ['TRANSFORMERS_CACHE'] = '/tmp'
 # Model load + prediction
 # ============================================================
 
-MODEL_PATH = 'muski2504/scamshield-job-fraud-detector'
+MODEL_PATH = 'muskii2004/scamshield-job-fraud-detector'
 # Model aur tokenizer load karo
 tokenizer = DistilBertTokenizer.from_pretrained(MODEL_PATH)
 model = DistilBertForSequenceClassification.from_pretrained(MODEL_PATH)
