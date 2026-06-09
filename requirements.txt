@@ -1,0 +1,8 @@
+flask
+streamlit
+transformers
+torch
+pandas
+scikit-learn
+requests
+huggingface_hub
