@@ -1,7 +1,8 @@
 import torch
 from transformers import DistilBertTokenizer, DistilBertForSequenceClassification
 from rules import check_rules
-
+import os
+os.environ['TRANSFORMERS_CACHE'] = '/tmp'
 # ============================================================
 # SCAMSHIELD — predictor.py
 # Model load + prediction
