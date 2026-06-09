@@ -1,5 +1,4 @@
 import streamlit as st
-import requests
 
 # ============================================================
 # SCAMSHIELD — app.py
@@ -49,11 +48,8 @@ if st.button("🔍 Analyse", type="primary", use_container_width=True):
         with st.spinner("Analysing..."):
             try:
                 # Flask API call
-                response = requests.post(
-                    "http://localhost:5000/predict",
-                    json={"text": text}
-                )
-                result = response.json()
+                from predictor import predict
+                result = predict(text)
 
                 st.markdown("---")
                 st.markdown("### Results")
