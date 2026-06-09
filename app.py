@@ -19,7 +19,8 @@ st.markdown("---")
 # Input
 st.markdown("### Paste Job Post / Recruiter Message / Offer Letter")
 text = st.text_area(
-    label="",
+    label="Job Post Text",
+    label_visibility="collapsed",
     placeholder="Paste any job post, WhatsApp message, or recruiter email here...",
     height=200
 )
