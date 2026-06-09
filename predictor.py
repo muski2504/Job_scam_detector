@@ -7,8 +7,7 @@ from rules import check_rules
 # Model load + prediction
 # ============================================================
 
-MODEL_PATH = 'models/scamshield_model'
-
+MODEL_PATH = 'muski2504/scamshield-job-fraud-detector'
 # Model aur tokenizer load karo
 tokenizer = DistilBertTokenizer.from_pretrained(MODEL_PATH)
 model = DistilBertForSequenceClassification.from_pretrained(MODEL_PATH)
